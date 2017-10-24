@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TtestCalculatorProgram
+namespace TtestCalculatorProgram // (t Test calculator for 2 independant means)
 {
     public partial class Form1 : Form
     {
@@ -20,38 +20,7 @@ namespace TtestCalculatorProgram
 
         private void Form1_Load(object sender, EventArgs e) 
         {
-            // Steps:
-
-            // Step 1:
-
-                // Set up two columnbs with var 10 rows each
-
-                // Take average of column 1 (all 10 rows) and then field 2 (all 10 rows)
-
-                // Go through the column and subtract the average from each input of that row and then square it
-
-                // Do this for both columns
-
-            // Step 2:
-
-                // Calculate S squared values
-
-                // Add all NEW row data together & then divide it by number of inputs minus 1
-
-                // This then gives us two different values of S squared (from our 2 different columns) 
-
-            // Step 3:
-
-                // Calculate t value (1 value) 
-
-                // Take averages the original AVG values from column 1 & 2
-
-                // Subtract OG AVG value from column 1 from OG AVG value of column 2
-
-                // Divide that number by the square root of the s2 value of col1 + the s2 value of col2 over the number of rows in each column
-
-            // Set up 10 rows:
-
+            // Set up 10 rows in each column:
             for (int i = 0; i < 10; i++)
             {
                 this.dataGridView1.Rows.Add();
@@ -90,6 +59,16 @@ namespace TtestCalculatorProgram
             }
 
             return sum / 9; // Return S2 Value
+        }
+
+        private double GetT(double AVG1, double AVG2, double S2Val1, double S2Val2, int rowCount) // Method used to caluculate the t value:
+        {
+            double numerator = AVG1 - AVG2;
+            double denomenator = Math.Sqrt((S2Val1 / rowCount) + (S2Val2 / rowCount));
+
+            double tValue = numerator / denomenator;
+
+            return tValue;
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -132,7 +111,10 @@ namespace TtestCalculatorProgram
             double S2ValueX = GetS2Numbers(dataSetOne);
             double S2ValueY = GetS2Numbers(dataSetTwo);
 
+            // Calculate final t value:
+            double tValue = GetT(averageX, averageY, S2ValueX, S2ValueY, 10);
 
+            txtDisplayResult.Text = Convert.ToString(tValue);
         }
     }
 }
