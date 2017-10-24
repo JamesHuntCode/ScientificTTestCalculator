@@ -1,0 +1,10 @@
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\bin\Debug\TtestCalculatorProgram.exe.config
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\bin\Debug\TtestCalculatorProgram.exe
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\bin\Debug\TtestCalculatorProgram.pdb
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\obj\Debug\TtestCalculatorProgram.csprojResolveAssemblyReference.cache
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\obj\Debug\TtestCalculatorProgram.Form1.resources
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\obj\Debug\TtestCalculatorProgram.Properties.Resources.resources
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\obj\Debug\TtestCalculatorProgram.csproj.GenerateResource.Cache
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\obj\Debug\TtestCalculatorProgram.csproj.CoreCompileInputs.cache
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\obj\Debug\TtestCalculatorProgram.exe
+C:\Users\James\source\repos\TtestCalculatorProgram\TtestCalculatorProgram\obj\Debug\TtestCalculatorProgram.pdb
